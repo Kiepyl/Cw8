@@ -14,6 +14,10 @@ public class Gad extends Zwierze{
     public String poruszajSie(){
         return "chlup chlup";
     }
+    @Override
+    public String srodowiskoNaturalne(){
+        return "Ocean";
+    }
     public void zmienPlec(){
         if (sex == 'M'){
             sex = 'F';

@@ -14,6 +14,10 @@ public class Ptak extends Zwierze{
     public String poruszajSie(){
         return "fruuuuuuu";
     }
+    @Override
+    public String srodowiskoNaturalne(){
+        return "las";
+    }
     public void odetnijSkrzydla(){
         czyLata = !czyLata;
         System.out.println("Ty potworze czemu to zrobiles... " + "Czy ten ptak moze latac? " + czyLata);

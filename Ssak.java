@@ -14,6 +14,10 @@ public class Ssak extends Zwierze{
     public String poruszajSie(){
         return "tup tup tup tup tup tup";
     }
+    @Override
+    public String srodowiskoNaturalne(){
+        return "piwnica";
+    }
     public void podajLekiUspokojenie(){
         if (czyAgresywny){
             czyAgresywny = false;
