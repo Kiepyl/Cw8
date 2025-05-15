@@ -8,10 +8,14 @@ public class Ptak extends Zwierze{
 
     @Override
     public String wydajDzwiek(){
-        return "";
+        return "cwierku cwierk";
     }
     @Override
     public String poruszajSie(){
-        return "";
+        return "fruuuuuuu";
+    }
+    public void odetnijSkrzydla(){
+        czyLata = !czyLata;
+        System.out.println("Ty potworze czemu to zrobiles... " + "Czy ten ptak moze latac? " + czyLata);
     }
 }

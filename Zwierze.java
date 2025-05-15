@@ -28,9 +28,3 @@ public abstract class Zwierze {
         System.out.println(age);
     }
 }
-
-class main {
-    public static void main(String[] args) {
-
-    }
-}

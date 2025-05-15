@@ -1,17 +1,24 @@
 public class Ssak extends Zwierze{
-    private String zoo;
+    private boolean czyAgresywny;
 
-    public Ssak(String name, int wiek, String zoo) {
+    public Ssak(String name, int wiek, boolean czyAgresywny) {
         super(name, wiek);
-        this.zoo = zoo;
+        this.czyAgresywny = czyAgresywny;
     }
 
     @Override
     public String wydajDzwiek() {
-        return "";
+        return "szczurkuje sobie";
     }
     @Override
     public String poruszajSie(){
-        return "";
+        return "tup tup tup tup tup tup";
+    }
+    public void podajLekiUspokojenie(){
+        if (czyAgresywny){
+            czyAgresywny = false;
+            System.out.println("Twoje zwierzatko jest juz spokojne.");
+        }
+        else System.out.println("Twoje zwierzatko poszlo spac.");
     }
 }

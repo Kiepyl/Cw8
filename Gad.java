@@ -1,17 +1,27 @@
 public class Gad extends Zwierze{
-    private String sex;
+    private char sex;
 
-    public Gad(String name, int wiek, String sex){
+    public Gad(String name, int wiek, char sex){
         super(name, wiek);
         this.sex = sex;
     }
 
     @Override
     public String wydajDzwiek(){
-        return "";
+        return "syk syk";
     }
     @Override
     public String poruszajSie(){
-        return "";
+        return "chlup chlup";
+    }
+    public void zmienPlec(){
+        if (sex == 'M'){
+            sex = 'F';
+            System.out.println("Twoje zwierzatko jest teraz kobita.");
+        }
+        else{
+            sex = 'M';
+            System.out.println("Twoje zwierzatko jest teraz chopem");
+        }
     }
 }
